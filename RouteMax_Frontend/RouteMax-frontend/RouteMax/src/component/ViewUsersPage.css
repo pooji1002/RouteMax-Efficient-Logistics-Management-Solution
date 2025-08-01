@@ -1,0 +1,170 @@
+/* --- Generic Page Container --- */
+.page-container {
+    padding: 40px;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+  }
+  
+  /* --- Reusable Header --- */
+  .page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #a8e063, #56ab2f);
+    padding: 15px 30px;
+    /* border-radius: 10px; */
+    margin-bottom: 30px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-header h2 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  /* --- Reusable Form Styles --- */
+  .form-style {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .form-style input,
+  .form-style select {
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .form-style button[type="submit"],
+  .form-style button[type="button"] {
+    background-color: #56ab2f;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .form-style button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  .edit-user-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .edit-user-form input,
+  .edit-user-form select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    min-width: 180px;
+  }
+  
+  /* --- Reusable Table Styles --- */
+  .users-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+  }
+  
+  .users-table th,
+  .users-table td {
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* ... (rest of your table and button styles) ... */
+  .users-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #555;
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+  
+  .users-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .users-table td:last-child button {
+    margin-right: 8px;
+  }
+  
+  .users-table td button {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .users-table td button:first-of-type {
+    background-color: #ffc107;
+    color: #333;
+    border-color: #ffc107;
+  }
+  
+  .users-table td button:first-of-type:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+  }
+  
+  .users-table td button:last-of-type {
+    background-color: #dc3545;
+    color: white;
+    border-color: #dc3545;
+  }
+  
+  .users-table td button:last-of-type:hover {
+    background-color: #c82333;
+    border-color: #c82333;
+  }
+  
+  .status-message {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+  }
+  .status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+  }

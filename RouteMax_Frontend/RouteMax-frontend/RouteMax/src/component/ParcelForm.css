@@ -1,0 +1,78 @@
+.add-parcel-container {
+    margin-top: 80px;
+    padding: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .parcel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #a8e063, #56ab2f);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .parcel-header h2 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .btn-add {
+    background-color: #ffffff;
+    color: #56ab2f;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .btn-add:hover {
+    background-color: #56ab2f;
+    color: white;
+  }
+  
+  .parcel-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .parcel-form input {
+    padding: 12px 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  .parcel-form button[type="submit"] {
+    background-color: #56ab2f;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .parcel-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  
+  @media (max-width: 600px) {
+    .add-parcel-container {
+      padding: 20px;
+    }
+  }
+  

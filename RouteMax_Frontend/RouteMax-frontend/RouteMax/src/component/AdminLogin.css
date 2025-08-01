@@ -1,0 +1,84 @@
+/* --- Admin Login Page Styles --- */
+
+/* Main container for the login page */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+/* The login card itself */
+.admin-login-card {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.admin-login-card h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Form sections for labels and inputs */
+.admin-login-section {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.admin-login-section label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.admin-login-section input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.admin-login-section input:focus {
+  outline: none;
+  border-color: #56ab2f;
+}
+
+/* Login button styling */
+.admin-login-btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #56ab2f;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-login-btn:hover {
+  background-color: #3e8e41;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .admin-login-card {
+    padding: 30px;
+  }
+}
